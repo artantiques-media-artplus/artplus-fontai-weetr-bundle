@@ -1,0 +1,22 @@
+{
+    "name": "fontai/weetr-bundle",
+    "type": "symfony-bundle",
+    "description": "Fontai WeetrBundle",
+    "authors": [
+        {
+            "name": "Lumír Toman",
+            "email": "toman@websource.cz"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": "~6.3"
+    },
+    "autoload": {
+        "psr-4": { "Fontai\\Bundle\\WeetrBundle\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}

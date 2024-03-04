@@ -1,0 +1,14 @@
+services:
+    _defaults:
+        public: false  
+
+    Fontai\Bundle\WeetrBundle\Service\Weetr:
+        arguments:
+            - '%weetr.client_id%'
+            - '%weetr.api_key%'
+            - '%weetr.api_password%'
+            - 'https://weetr.com/api'
+
+    weetr:
+        alias: Fontai\Bundle\WeetrBundle\Service\Weetr
+        public: true
